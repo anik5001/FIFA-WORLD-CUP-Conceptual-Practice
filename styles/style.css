@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #dd0000;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+/* banner section */
+
+.banner {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.banner-left {
+  padding-left: 45px;
+  /* flex: 1; */
+  width: 40%;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 70px;
+}
+.banner-description {
+  margin: 20px 0px;
+}
+.banner-right {
+  flex: 1;
+}
+.banner-right img {
+  display: block;
+}
+
+/* matches */
+.matches {
+  display: flex;
+}
+.matches-left {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 25%;
+  gap: 10px;
+  height: fit-content;
+  border-radius: 15px;
+  padding: 15px;
+}
+.matches-left .btn:nth-child(1),
+.matches-left .btn:nth-child(2) {
+  background-color: white;
+  color: black;
+  width: 250px;
+}
+.matches-left .btn {
+  width: 250px;
+}
+.matches-right {
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+.card {
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 10px;
+}
+.matches-right .card img {
+  height: 180px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 8px 17px;
+  margin-top: 10px;
+}
+.card h2 {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.card-bottom {
+  display: flex;
+  gap: 20px;
+  color: #161616cc;
+}
