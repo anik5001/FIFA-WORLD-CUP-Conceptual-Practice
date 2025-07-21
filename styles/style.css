@@ -30,15 +30,15 @@
 @keyframes player-animation {
   0% {
     opacity: 0.5;
-    transform: translate(-20);
+    transform: translate(-20px);
   }
   50% {
     opacity: 0.7;
-    transform: translate(-10);
+    transform: translate(-10px);
   }
   100% {
     opacity: 1;
-    transform: translate(0);
+    transform: translate(0px);
   }
 }
 .btn {
@@ -158,4 +158,46 @@ footer div {
   display: flex;
   justify-content: center;
   gap: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 10px;
+  }
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+  .banner .banner-left {
+    margin-bottom: 50px;
+    padding-left: 0;
+    padding-top: 30px;
+    width: 100%;
+  }
+  .banner-title {
+    font-weight: 600;
+    font-size: 50px;
+  }
+  .matches {
+    flex-direction: column;
+  }
+  .matches-left {
+    flex-direction: row;
+    background-color: transparent;
+    flex: 1;
+  }
+  .matches-right {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    width: 100%;
+  }
+  footer div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 15px;
+  }
 }
