@@ -1,7 +1,12 @@
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .btn {
@@ -18,13 +23,14 @@
   background-color: black;
   color: white;
   display: flex;
+
   align-items: center;
   margin-top: 15px;
   margin-bottom: 50px;
 }
 .banner-left {
   padding-left: 45px;
-  /* flex: 1; */
+  flex: 1;
   width: 40%;
 }
 .banner-title {
@@ -45,6 +51,8 @@
 /* matches */
 .matches {
   display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
 }
 .matches-left {
   display: flex;
@@ -97,4 +105,20 @@
   display: flex;
   gap: 20px;
   color: #161616cc;
+  margin: 0px;
+}
+
+footer {
+  height: 500px;
+  background-color: black;
+  color: white;
+}
+footer h2 {
+  text-align: center;
+  padding: 70px 0;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
